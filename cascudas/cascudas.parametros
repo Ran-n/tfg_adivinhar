@@ -1,0 +1,11 @@
+{
+ "nomenclatura": "dataset-cascudas-pecusCNN_032;epochs_045;batch-size_256;semente_001___b0d17af8",
+ "dimensións": "32x32",
+ "epochs": 45,
+ "batch size": 256,
+ "cant clases": 3,
+ "semente": 1,
+ "% train": 0.8,
+ "% validation": 0.1,
+ "% test": 0.1
+}

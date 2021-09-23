@@ -1,0 +1,32 @@
+{
+    "Dimensións": "32x32",
+    "Epochs": 50,
+    "Batch Size": 16,
+    "Clases": [
+        "gonzales",
+        "speedy"
+    ],
+    "Cantidade Clases": 2,
+    "% train-val-test": [
+        0.8,
+        0.1,
+        0.1
+    ],
+    "semente": 1,
+    "Distribución Imaxes": {
+        "Train": 8000,
+        "Validation": 1008,
+        "Test": {
+            "32": 992,
+            "64": 992,
+            "128": 992
+        },
+        "Total": 10000
+    },
+    "Batchs coas imaxes": {
+        "Train": 500,
+        "Validation": 63,
+        "Test": 62,
+        "Total": 625
+    }
+}

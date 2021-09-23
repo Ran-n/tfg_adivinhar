@@ -1,0 +1,26 @@
+{
+    "Dataset 32": {
+        "tp|fn|tn|fp": "523|0|469|0",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f": 1.0,
+        "fpr": 0.0
+    },
+    "Dataset 64": {
+        "tp|fn|tn|fp": "518|0|474|0",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f": 1.0,
+        "fpr": 0.0
+    },
+    "Dataset 128": {
+        "tp|fn|tn|fp": "518|0|474|0",
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f": 1.0,
+        "fpr": 0.0
+    }
+}

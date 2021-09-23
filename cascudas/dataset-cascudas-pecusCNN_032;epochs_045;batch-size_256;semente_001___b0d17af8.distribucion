@@ -1,0 +1,34 @@
+{
+    "Dimensións": "32x32",
+    "Epochs": 45,
+    "Batch Size": 256,
+    "Clases": [
+        "gregor",
+        "grete",
+        "samsa"
+    ],
+    "Cantidade Clases": 3,
+    "% train-val-test": [
+        0.8,
+        0.1,
+        0.1
+    ],
+    "semente": 1,
+    "Distribución Imaxes": {
+        "Train": 10079,
+        "Validation": 1119,
+        "Test": {
+            "32": 1280,
+            "64": 1280,
+            "128": 1280,
+            "256": 1280
+        },
+        "Total": 12639
+    },
+    "Batchs coas imaxes": {
+        "Train": 40,
+        "Validation": 5,
+        "Test": 5,
+        "Total": 50
+    }
+}

@@ -1,0 +1,11 @@
+{
+ "nomenclatura": "dataset-ratas_032;epochs_050;batch-size_016;semente_001___eabaa98d",
+ "dimensións": "32x32",
+ "epochs": 50,
+ "batch size": 16,
+ "cant clases": 2,
+ "semente": 1,
+ "% train": 0.8,
+ "% validation": 0.1,
+ "% test": 0.1
+}

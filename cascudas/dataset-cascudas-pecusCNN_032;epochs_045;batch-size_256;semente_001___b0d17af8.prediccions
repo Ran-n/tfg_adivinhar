@@ -1,0 +1,242 @@
+{
+    "Dataset 32": {
+        "gregor": {
+            "acertos": 379,
+            "erros": {
+                "grete": 0,
+                "samsa": 0
+            },
+            "total": 379,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "grete": {
+            "acertos": 470,
+            "erros": {
+                "gregor": 0,
+                "samsa": 0
+            },
+            "total": 470,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "samsa": {
+            "acertos": 431,
+            "erros": {
+                "gregor": 0,
+                "grete": 0
+            },
+            "total": 431,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "total imaxes": 1280,
+        "porcentaxes imaxes": {
+            "gregor": 29.609375,
+            "grete": 36.71875,
+            "samsa": 33.671875
+        },
+        "media porcentaxes": {
+            "gregor": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "grete": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "samsa": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "acertos": 100.0,
+            "erros": 0.0
+        }
+    },
+    "Dataset 64": {
+        "gregor": {
+            "acertos": 389,
+            "erros": {
+                "grete": 0,
+                "samsa": 0
+            },
+            "total": 389,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "grete": {
+            "acertos": 491,
+            "erros": {
+                "gregor": 0,
+                "samsa": 0
+            },
+            "total": 491,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "samsa": {
+            "acertos": 400,
+            "erros": {
+                "gregor": 0,
+                "grete": 0
+            },
+            "total": 400,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "total imaxes": 1280,
+        "porcentaxes imaxes": {
+            "gregor": 30.390625,
+            "grete": 38.359375,
+            "samsa": 31.25
+        },
+        "media porcentaxes": {
+            "gregor": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "grete": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "samsa": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "acertos": 100.0,
+            "erros": 0.0
+        }
+    },
+    "Dataset 128": {
+        "gregor": {
+            "acertos": 389,
+            "erros": {
+                "grete": 0,
+                "samsa": 0
+            },
+            "total": 389,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "grete": {
+            "acertos": 491,
+            "erros": {
+                "gregor": 0,
+                "samsa": 0
+            },
+            "total": 491,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "samsa": {
+            "acertos": 400,
+            "erros": {
+                "gregor": 0,
+                "grete": 0
+            },
+            "total": 400,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "total imaxes": 1280,
+        "porcentaxes imaxes": {
+            "gregor": 30.390625,
+            "grete": 38.359375,
+            "samsa": 31.25
+        },
+        "media porcentaxes": {
+            "gregor": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "grete": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "samsa": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "acertos": 100.0,
+            "erros": 0.0
+        }
+    },
+    "Dataset 256": {
+        "gregor": {
+            "acertos": 389,
+            "erros": {
+                "grete": 0,
+                "samsa": 0
+            },
+            "total": 389,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "grete": {
+            "acertos": 491,
+            "erros": {
+                "gregor": 0,
+                "samsa": 0
+            },
+            "total": 491,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "samsa": {
+            "acertos": 400,
+            "erros": {
+                "gregor": 0,
+                "grete": 0
+            },
+            "total": 400,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "total imaxes": 1280,
+        "porcentaxes imaxes": {
+            "gregor": 30.390625,
+            "grete": 38.359375,
+            "samsa": 31.25
+        },
+        "media porcentaxes": {
+            "gregor": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "grete": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "samsa": {
+                "acertos": 0,
+                "erros": 0
+            },
+            "acertos": 100.0,
+            "erros": 0.0
+        }
+    }
+}

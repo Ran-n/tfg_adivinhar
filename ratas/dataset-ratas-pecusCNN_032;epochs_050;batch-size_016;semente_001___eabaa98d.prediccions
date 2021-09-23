@@ -1,0 +1,89 @@
+{
+    "Dataset 32": {
+        "gonzales": {
+            "acertos": 523,
+            "erros": 0,
+            "total": 523,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "speedy": {
+            "acertos": 469,
+            "erros": 0,
+            "total": 469,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "total imaxes": 992,
+        "porcentaxes imaxes": {
+            "gonzales": 52.721774193548384,
+            "speedy": 47.278225806451616
+        },
+        "media porcentaxes": {
+            "acertos": 100.0,
+            "erros": 0.0
+        }
+    },
+    "Dataset 64": {
+        "gonzales": {
+            "acertos": 518,
+            "erros": 0,
+            "total": 518,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "speedy": {
+            "acertos": 474,
+            "erros": 0,
+            "total": 474,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "total imaxes": 992,
+        "porcentaxes imaxes": {
+            "gonzales": 52.21774193548387,
+            "speedy": 47.78225806451613
+        },
+        "media porcentaxes": {
+            "acertos": 100.0,
+            "erros": 0.0
+        }
+    },
+    "Dataset 128": {
+        "gonzales": {
+            "acertos": 518,
+            "erros": 0,
+            "total": 518,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "speedy": {
+            "acertos": 474,
+            "erros": 0,
+            "total": 474,
+            "porcentaxes": {
+                "acertos": 100.0,
+                "erros": 0.0
+            }
+        },
+        "total imaxes": 992,
+        "porcentaxes imaxes": {
+            "gonzales": 52.21774193548387,
+            "speedy": 47.78225806451613
+        },
+        "media porcentaxes": {
+            "acertos": 100.0,
+            "erros": 0.0
+        }
+    }
+}

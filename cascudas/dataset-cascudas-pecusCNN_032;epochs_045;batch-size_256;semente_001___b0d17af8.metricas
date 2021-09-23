@@ -1,0 +1,178 @@
+{
+    "Dataset 32": {
+        "gregor": {
+            "tp|fn|tn|fp": "379|0|901|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "grete": {
+            "tp|fn|tn|fp": "470|0|810|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "samsa": {
+            "tp|fn|tn|fp": "431|0|849|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "total": {
+            "f1c1|f1c2|f1c3|f2c1|f2c2|f2c3|f3c1|f3c2|f3c3": "379|0|0|0|470|0|0|0|431",
+            "macro": {
+                "accuracy": 1.0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f": 1.0,
+                "fpr": 0.0
+            },
+            "micro": {
+                "tp|fn|tn|fp": "1280|0|2560|0",
+                "accuracy": 1.0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f": 1.0,
+                "fpr": 0.0
+            }
+        }
+    },
+    "Dataset 64": {
+        "gregor": {
+            "tp|fn|tn|fp": "389|0|891|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "grete": {
+            "tp|fn|tn|fp": "491|0|789|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "samsa": {
+            "tp|fn|tn|fp": "400|0|880|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "total": {
+            "f1c1|f1c2|f1c3|f2c1|f2c2|f2c3|f3c1|f3c2|f3c3": "389|0|0|0|491|0|0|0|400",
+            "macro": {
+                "accuracy": 1.0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f": 1.0,
+                "fpr": 0.0
+            },
+            "micro": {
+                "tp|fn|tn|fp": "1280|0|2560|0",
+                "accuracy": 1.0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f": 1.0,
+                "fpr": 0.0
+            }
+        }
+    },
+    "Dataset 128": {
+        "gregor": {
+            "tp|fn|tn|fp": "389|0|891|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "grete": {
+            "tp|fn|tn|fp": "491|0|789|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "samsa": {
+            "tp|fn|tn|fp": "400|0|880|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "total": {
+            "f1c1|f1c2|f1c3|f2c1|f2c2|f2c3|f3c1|f3c2|f3c3": "389|0|0|0|491|0|0|0|400",
+            "macro": {
+                "accuracy": 1.0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f": 1.0,
+                "fpr": 0.0
+            },
+            "micro": {
+                "tp|fn|tn|fp": "1280|0|2560|0",
+                "accuracy": 1.0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f": 1.0,
+                "fpr": 0.0
+            }
+        }
+    },
+    "Dataset 256": {
+        "gregor": {
+            "tp|fn|tn|fp": "389|0|891|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "grete": {
+            "tp|fn|tn|fp": "491|0|789|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "samsa": {
+            "tp|fn|tn|fp": "400|0|880|0",
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f": 1.0,
+            "fpr": 0.0
+        },
+        "total": {
+            "f1c1|f1c2|f1c3|f2c1|f2c2|f2c3|f3c1|f3c2|f3c3": "389|0|0|0|491|0|0|0|400",
+            "macro": {
+                "accuracy": 1.0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f": 1.0,
+                "fpr": 0.0
+            },
+            "micro": {
+                "tp|fn|tn|fp": "1280|0|2560|0",
+                "accuracy": 1.0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f": 1.0,
+                "fpr": 0.0
+            }
+        }
+    }
+}
