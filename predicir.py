@@ -15,9 +15,13 @@ __args = sys.argv[1:]
 def axuda(sair):
     print('\nAxuda -----------')
 
-    print('?/-h/-a\t\t-> Para esta mensaxe')
-    print('-m\t\t-> Modelo a usar (carpeta con tódolos arquivos)')
-    print('-i\t\t-> Imaxe a adivinhar\t[adivinhar.jpg]')
+    print('?|-h|-a\t -> Para esta mensaxe')
+    print('-m\t -> Modelo a usar (carpeta con tódolos arquivos)')
+    print('-ie\t -> Imaxe de entrada\t\t\t\t\t[adivinhar.jpg]')
+    print('-is\t -> Imaxe de saída\t\t\t\t\t[mesma da de entrada]')
+    print('-t\t -> Tamanho da imaxe de saída\t\t\t\t[o da orixinal]')
+    print('-p\t -> Mostrar porcentaxe confianza')
+    print('-c\t -> Centrar o texto na imaxe')
     
     print("----------------\n")
     
@@ -36,6 +40,7 @@ import numpy as np
 from termcolor import colored
 
 import cv2
+from PIL import ImageFont, ImageDraw, Image
 
 from uteis import ficheiro
 
@@ -50,20 +55,38 @@ def opcions():
         print('!! Debes incluir o modelo a cargar !!')
         axuda(True)
 
-    if '-i' in __args:
-        nome_imaxe = str(__args[__args.index('-i')+1])
+    if '-ie' in __args:
+        nome_imaxe = str(__args[__args.index('-ie')+1])
     else:
         nome_imaxe = 'adivinhar.jpg'
     print('** Usando imaxe "{}" **'.format(nome_imaxe))
 
-    return nome_modelo, modelo, nome_imaxe
+    if '-is' in __args:
+        nome_imaxe_saida = str(__args[__args.index('-is')+1])
+    else:
+        nome_imaxe_saida = nome_imaxe
+    print('** Identificarase sobre a imaxe de entrada "{}" **'.format(nome_imaxe_saida))
+
+    if '-p' in __args:
+        porcentaxe = True
+    else:
+        porcentaxe = False
+
+    if '-c' in __args:
+        centro = True
+    else:
+        centro = False
+
+    if '-t' in __args:
+        modificar_tamanho = str(__args[__args.index('-t')+1])
+    else:
+        modificar_tamanho = False
+
+    return nome_modelo, modelo, nome_imaxe, nome_imaxe_saida, porcentaxe, centro, modificar_tamanho
 
 #-----------------------------------------------------------------
 
-def predicir():
-    # collemos as opcións introducidas por comandos
-    nome_modelo, modelo, nome_imaxe = opcions()
-
+def predicir(nome_modelo, modelo, nome_imaxe):
     # cargar as dimensións das imaxes de entrenamento
     ALTURA_IMAXE_ENTRENAMENTO, ANCHURA_IMAXE_ENTRENAMENTO = ficheiro.cargarJson(nome_modelo+'/'+nome_modelo+'.parametros')['dimensións'].split('x')
 
@@ -84,18 +107,58 @@ def predicir():
     puntaxe_predita = np.max(puntaxe)
 
     print('\n********************************************************')
-    print(' A imaxe é da clase {} cunha confianza do {}'.format(colored(clase_predita, 'white', 'on_red'), colored(str(puntaxe_predita*100)[:5]+'%', 'white', 'on_blue')))
+    print(' A imaxe é da clase {} cunha confianza do {}'.format(colored(clase_predita, 'white', 'on_red'), 
+        colored(str(puntaxe_predita*100)[:5]+'%', 'white', 'on_blue')))
     print('********************************************************')
 
-def editar_imaxe():
-    print('a')
+    return clase_predita, puntaxe_predita
 
+
+def editar_imaxe(nome_imaxe, nome_imaxe_saida, clase_predita, puntaxe_predita, porcentaxe, centro, modificar_tamanho):
+    puntaxe_predita = str(puntaxe_predita*100)[:5]+'%'
+
+    imx = cv2.imread(nome_imaxe)
+
+    if modificar_tamanho:
+        x, y = (modificar_tamanho.split('x'))
+        imx = cv2.resize(imx, (int(x), int(y)))
+
+    fonte = cv2.FONT_HERSHEY_SIMPLEX
+    
+    tamanho_texto1 = cv2.getTextSize(clase_predita, fonte, 1, 2)[0]
+    x_texto1 = int((imx.shape[1] - tamanho_texto1[0]) / 2)
+    if centro and porcentaxe:
+        y_texto1 = int((imx.shape[0] - tamanho_texto1[1]) / 2)
+    
+    elif centro:
+        y_texto1 = int((imx.shape[0] + tamanho_texto1[1]) / 2)
+    
+    else:
+        y_texto1 = int((0 + tamanho_texto1[1]))
+
+    cv2.putText(imx, clase_predita, (x_texto1, y_texto1), fonte, 1, (255, 255, 255), 2)
+
+    if porcentaxe:
+        tamanho_texto2 = cv2.getTextSize(puntaxe_predita, fonte, 1, 2)[0]
+        x_texto2 = int((imx.shape[1] - tamanho_texto2[0]) / 2)
+        
+        if centro:
+            y_texto2 = int(y_texto1 + 2*tamanho_texto1[1])
+        else:
+            y_texto2 = int((imx.shape[0] - tamanho_texto2[1] / 2))
+        cv2.putText(imx, puntaxe_predita, (x_texto2, y_texto2), fonte, 1, (255, 255, 255), 2)
+
+    cv2.imwrite(nome_imaxe_saida, imx)
+
+    cv2.destroyAllWindows()
 
 #-----------------------------------------------------------------
 
 def main():
-    predicir()
-    editar_imaxe()
+    # collemos as opcións introducidas por comandos
+    nome_modelo, modelo, nome_imaxe, nome_imaxe_saida, porcentaxe, centro, modificar_tamanho = opcions()
+    clase_predita, puntaxe_predita = predicir(nome_modelo, modelo, nome_imaxe)
+    editar_imaxe(nome_imaxe, nome_imaxe_saida, clase_predita, puntaxe_predita, porcentaxe, centro, modificar_tamanho)
 
 #-----------------------------------------------------------------
 
